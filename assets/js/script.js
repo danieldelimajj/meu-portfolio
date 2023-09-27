@@ -10,3 +10,4 @@ function ativaLetra(elemento){
 
 const titulo = document.querySelector('.text-effect');
 ativaLetra(titulo);
+
