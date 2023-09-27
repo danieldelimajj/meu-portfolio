@@ -11,3 +11,11 @@ function ativaLetra(elemento){
 const titulo = document.querySelector('.text-effect');
 ativaLetra(titulo);
 
+
+const ativaMenu = document.querySelector('.fa-bars');
+const navMenu = document.querySelector('header .nav-list')
+
+ativaMenu.addEventListener('click', ()=>{
+    ativaMenu.classList.toggle('fa-x')
+    navMenu.classList.toggle('ativado')
+})
