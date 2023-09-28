@@ -9,6 +9,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 /*HEADER*/
 
 header {
@@ -71,6 +76,7 @@ header .nav-list li a:hover::after {
 }
 
 .section-div div {
+    margin-top: 120px;
     display: grid;
     gap: 30px;
     align-self: start;
@@ -92,7 +98,7 @@ header .nav-list li a:hover::after {
 .section-div p {
     color: #f7f7f7;
     font-weight: 200;
-    text-indent: 20px;
+    
 }
 
 @keyframes inicializar {
@@ -111,6 +117,112 @@ header .nav-list li a:hover::after {
     from {
         transition: .7s;
         transform: translate3d(-50px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/*SECTION MAIN ABOUT ME*/
+
+main {
+    background-color: #111;
+    color: #fff;
+    padding-top: 20px;
+}
+
+main .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.about-tittle {
+    margin: 30px 0;
+    font-size: 15px;
+    grid-column: 1/ -1;
+    text-align: center;
+    color: #fff;
+}
+
+.about-tittle h1 {
+    font-size: 2.5rem;
+    color: rgb(50, 135, 132);
+}
+
+.about-tittle p {
+    font-size: 1rem;
+    color: #707070;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.about-tittle div {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.about-tittle span {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(23, 117, 114);
+}
+
+.about img {
+    cursor: pointer;
+    grid-row: 2;
+    max-width: 100%;
+    border-radius: 6px;
+    filter: blur(0px);
+    animation: ladoImg .5s ease-in-out forwards;
+}
+
+.about img:hover {
+    transition: .5s ease-in;
+    filter: blur(1px);
+}
+
+.about-content {
+    display: grid;
+    grid-column: 2/ -1;
+    grid-template-columns: 1fr;
+    animation: sobeSecao .6s ease-in-out forwards;
+}
+
+.about-content h1 {
+    padding-bottom: 1rem;
+    color: #f7f7f7;
+}
+
+.about-content p {
+    color: #707070;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    grid-column: 1/ -1;
+    grid-row: 2;
+}
+
+@keyframes sobeSecao {
+    from {
+        transition: .5s;
+        transform: translate3d(60px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes ladoImg {
+    from {
+        transition: .5s;
+        transform: translate3d(-60px, 0, 0);
     }
 
     to {
