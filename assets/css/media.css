@@ -1,15 +1,32 @@
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 720px) /*MOBILE */{
     body {
         overflow-x: hidden;
     }
-   
-    .section-div h1 {
-        font-size: 1.4rem;
+
+
+    .section-div {
+        display: grid;
+        background-color: #000;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;
+        gap: 60px;
+        padding: 20px;
+    }
+
+    .section-div h2{
+        font-size: 1rem;
+    }
+
+    .section-div div h1 {
+        font-size: 1.2rem;
+        
     }
 
     .section-div p {
         color: rgb(50, 135, 132);
-        letter-spacing: 1px;
+        font-weight: 200;
+        
     }
 
     .about img {
@@ -30,10 +47,28 @@
         color: #707070;
         letter-spacing: 1px;
         font-size: 1.5rem;
-        
-    
     }
 
+    main .about  {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-content h1 {
+        color: rgb(50, 135, 132);
+        text-align: center;
+    }
+
+    .about-content p {
+        color: #707070;
+        flex-wrap: wrap;
+        
+    }
     
 }
 

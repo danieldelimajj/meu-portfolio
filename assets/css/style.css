@@ -9,6 +9,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  html ::-webkit-scrollbar-thumb { /*Cor interna da barra de rolagem*/
+    border-radius: 50px;
+    background: rgb(50, 135, 132);
+  }
+
+  html ::-webkit-scrollbar-track { /*Cor externa da barra de rolagem*/
+    background: #f7f7f7;
+  }
+
 body {
     max-width: 1920px;
     margin: 0 auto;
@@ -23,7 +36,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
 }
 
 header .logo-img {
@@ -72,7 +84,6 @@ header .nav-list li a:hover::after {
     align-items: center;
     gap: 60px;
     padding: 60px;
-
 }
 
 .section-div div {
@@ -96,8 +107,9 @@ header .nav-list li a:hover::after {
 }
 
 .section-div p {
-    color: #f7f7f7;
+    color: rgb(50, 135, 132);
     font-weight: 200;
+
     
 }
 
