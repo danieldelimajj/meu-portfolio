@@ -1,8 +1,7 @@
 @media screen and (max-width: 720px) /*MOBILE */{
     body {
-        overflow-x: hidden;
+        
     }
-
 
     .section-div {
         display: grid;
@@ -11,11 +10,11 @@
         justify-content: space-around;
         align-items: center;
         gap: 60px;
-        padding: 20px;
+        padding: 25px;
     }
 
     .section-div h2{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .section-div div h1 {
@@ -45,8 +44,8 @@
    
     .about-content p {
         color: #707070;
-        letter-spacing: 1px;
         font-size: 1.5rem;
+        padding: 15px;
     }
 
     main .about  {
@@ -66,7 +65,6 @@
 
     .about-content p {
         color: #707070;
-        flex-wrap: wrap;
         
     }
     
