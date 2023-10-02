@@ -1,26 +1,25 @@
 @media screen and (max-width: 720px) /*MOBILE */{
-    body {
-        
-    }
 
     .section-div {
         display: grid;
         background-color: #000;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
         justify-content: space-around;
         align-items: center;
-        gap: 60px;
         padding: 25px;
+        padding-top: 5rem;
+        gap: 60px;
+    }
+
+
+    .section-div div h1 {
+        font-size: 1.4rem;
     }
 
     .section-div h2{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
-    .section-div div h1 {
-        font-size: 1.2rem;
-        
-    }
 
     .section-div p {
         color: rgb(50, 135, 132);
