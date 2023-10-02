@@ -195,11 +195,12 @@ main .about {
 }
 
 .about img {
+    position: relative;
     cursor: pointer;
-    grid-row: 2;
     max-width: 100%;
-    border-radius: 6px;
+    border-radius: 10px;
     animation: ladoImg .5s ease-in-out forwards;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.137);
 }
 
 
