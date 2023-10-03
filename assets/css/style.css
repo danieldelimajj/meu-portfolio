@@ -121,6 +121,51 @@ header .nav-list li a:hover::after {
     
 }
 
+ .about-info {
+        background-color: #151515;
+        margin-top: -30px;
+        padding: 60px;
+    }
+
+    .about-info ul {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .about-info ul li {
+        cursor: pointer;
+        position: relative;
+        padding: 10px;
+        border-radius: 6px;
+        display: grid;
+        align-content: center;
+        gap: 30px;
+        text-align: center;
+        max-width: 300px;
+        background-color: #222;
+    }
+
+    .about-info ul li i {
+        font-size: 2.7rem;
+        color: rgb(50, 135, 132);
+    }
+
+    .about-info ul li h3 {
+        color: #f7f7f7;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    
+    .about-info ul li p {
+        color: #707070;
+        font-size: 1.1rem;
+    }
+
+    
+
 @keyframes inicializar {
     from {
         opacity: 0;
@@ -224,6 +269,8 @@ main .about {
     grid-column: 1/ -1;
     grid-row: 2;
 }
+
+
 
 @keyframes sobeSecao {
     from {
