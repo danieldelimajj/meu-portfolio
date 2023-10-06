@@ -107,7 +107,8 @@ header .nav-list li a:hover::after {
 
 .social-icon {
     color: #fff;
-    font-size: 25px;        
+    font-size: 25px;   
+    cursor: pointer;     
 }
 
 .fa-react {
@@ -121,75 +122,7 @@ header .nav-list li a:hover::after {
     
 }
 
- .about-info {
-        background-color: #151515;
-        margin-top: -30px;
-        padding: 60px;
-    }
-
-    .about-info ul {
-       display: flex;
-       flex-wrap: wrap;
-       gap: 20px;
-       align-items: center;
-       justify-content: center;
-    }
-
-    .about-info ul li {
-        cursor: pointer;
-        position: relative;
-        padding: 10px;
-        border-radius: 6px;
-        display: grid;
-        align-content: center;
-        gap: 30px;
-        text-align: center;
-        max-width: 300px;
-        background-color: #222;
-    }
-
-    .about-info ul li i {
-        font-size: 2.7rem;
-        color: rgb(50, 135, 132);
-    }
-
-    .about-info ul li h3 {
-        color: #f7f7f7;
-        font-size: 1.6rem;
-        font-weight: 500;
-    }
-    
-    .about-info ul li p {
-        color: #707070;
-        font-size: 1.1rem;
-    }
-
-    
-
-@keyframes inicializar {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -60px, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes sobeSecao {
-    from {
-        transition: .7s;
-        transform: translate3d(-50px, 0, 0);
-    }
-
-    to {
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-/*SECTION MAIN ABOUT ME*/
+/*MAIN CONTENT ABOUT ME*/
 
 main {
     background-color: #111;
@@ -197,9 +130,10 @@ main {
     padding-top: 20px;
 }
 
+
 main .about {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
     justify-content: center;
     padding: 40px;
@@ -249,25 +183,105 @@ main .about {
 }
 
 
+ .about-info {
+        background-color: #151515;
+        margin-top: -30px;
+        padding: 60px;
+        border-radius: 10px;
+    }
 
-.about-content {
-    display: grid;
-    grid-column: 2/ -1;
-    grid-template-columns: 1fr;
-    animation: sobeSecao .6s ease-in-out forwards;
-}
+    .about-info ul {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+       align-items: center;
+       justify-content: center;
+    }
 
-.about-content h1 {
-    padding-bottom: 1rem;
-    color: #f7f7f7;
-}
 
-.about-content p {
-    color: #707070;
-    letter-spacing: 1px;
-    font-size: 1.1rem;
-    grid-column: 1/ -1;
-    grid-row: 2;
+    .about-info ul li {
+        cursor: pointer;
+        position: relative;
+        padding: 10px;
+        border-radius: 6px;
+        display: grid;
+        align-content: center;
+        gap: 30px;
+        text-align: center;
+        max-width: 300px;
+        background-color: #222;
+    }
+
+    .about-info ul li i {
+        font-size: 2.7rem;
+        color: rgb(50, 135, 132);
+    }
+
+    .about-info ul li h3 {
+        color: #f7f7f7;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    
+    .about-info ul li p {
+        color: #707070;
+        font-size: 1.1rem;
+    }
+
+    /*HOVER EFFECT and TRANSITION EFFECT*/
+
+    .about-info li::before {
+        content: '';
+        transition: .5s ease-in-out;
+        border-radius: 6px;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        border-top: 2px solid rgb(50, 135, 132);
+        border-right: 2px solid transparent;
+    }
+
+    .about-info li::after {
+        content: '';
+        transition: .5s ease-in-out;
+        border-radius: 6px;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        bottom: -2;
+        left: -2;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+
+    .about-info li:hover::before{
+        width: 100%;
+        height: 100%;
+        border-top: 2px solid rgb(50, 135, 132);
+        border-right: 2px solid rgb(50, 135, 132);
+    }
+
+    .about-info li:hover::after{
+        width: 100%;
+        height: 100%;
+        border-bottom: 2px solid rgb(50, 135, 132);
+        border-left: 2px solid rgb(50, 135, 132);
+    }
+
+    
+
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 
